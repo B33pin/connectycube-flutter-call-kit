@@ -141,6 +141,7 @@ fun createCallNotification(
         .setOngoing(true)
         .setCategory(NotificationCompat.CATEGORY_CALL)
         .setContentIntent(pendingIntent)
+        .setFullScreenIntent(pendingIntent, true)
         .setSound(ringtone)
         .setPriority(NotificationCompat.PRIORITY_MAX)
         .setTimeoutAfter(60000)
